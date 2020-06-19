@@ -64,7 +64,7 @@
 
     <section class="container">
         <h4 class="center ">Please enter your login details below.</h4>
-        <form action="login.php" method="POST">
+        <form action="<?php echo $_SERVER['PHP_SELF'] ?>" method="POST">
             <label>ID number</label>
             <input type="text" name="id" id="id" value="<?php echo $id ?>">
             <div class="red-text"><?php echo $errors['id']; ?></div>
